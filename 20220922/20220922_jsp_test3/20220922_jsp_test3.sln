@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32802.440
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "20220922_jsp_test3", "20220922_jsp_test3\20220922_jsp_test3.vcxproj", "{87107E00-B5CD-4C65-B260-F6249E227DCB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{87107E00-B5CD-4C65-B260-F6249E227DCB}.Debug|x64.ActiveCfg = Debug|x64
+		{87107E00-B5CD-4C65-B260-F6249E227DCB}.Debug|x64.Build.0 = Debug|x64
+		{87107E00-B5CD-4C65-B260-F6249E227DCB}.Debug|x86.ActiveCfg = Debug|Win32
+		{87107E00-B5CD-4C65-B260-F6249E227DCB}.Debug|x86.Build.0 = Debug|Win32
+		{87107E00-B5CD-4C65-B260-F6249E227DCB}.Release|x64.ActiveCfg = Release|x64
+		{87107E00-B5CD-4C65-B260-F6249E227DCB}.Release|x64.Build.0 = Release|x64
+		{87107E00-B5CD-4C65-B260-F6249E227DCB}.Release|x86.ActiveCfg = Release|Win32
+		{87107E00-B5CD-4C65-B260-F6249E227DCB}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6C02A4F6-327D-44F8-9F5B-71B7C85A97A6}
+	EndGlobalSection
+EndGlobal
