@@ -1,0 +1,7 @@
+﻿  20221110_jsp_log.cpp
+D:\c_programming\20221110\20221110_jsp_log\20221110_jsp_log\20221110_jsp_log.cpp(10,17): warning C4244: 'return': 'double'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+D:\c_programming\20221110\20221110_jsp_log\20221110_jsp_log\20221110_jsp_log.cpp(24,18): warning C4244: '=': 'double'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+D:\c_programming\20221110\20221110_jsp_log\20221110_jsp_log\20221110_jsp_log.cpp(31,20): warning C4244: '=': 'double'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+D:\c_programming\20221110\20221110_jsp_log\20221110_jsp_log\20221110_jsp_log.cpp(32,39): warning C4244: '+=': 'double'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+D:\c_programming\20221110\20221110_jsp_log\20221110_jsp_log\20221110_jsp_log.cpp(33,15): warning C4244: '=': 'double'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  20221110_jsp_log.vcxproj -> D:\c_programming\20221110\20221110_jsp_log\Debug\20221110_jsp_log.exe
