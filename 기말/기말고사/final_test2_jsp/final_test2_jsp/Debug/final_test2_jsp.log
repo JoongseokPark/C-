@@ -1,0 +1,6 @@
+﻿  final_test2_jsp.cpp
+D:\c_programming\기말고사\final_test2_jsp\final_test2_jsp\final_test2_jsp.cpp(18,18): warning C4244: '=': 'double'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+D:\c_programming\기말고사\final_test2_jsp\final_test2_jsp\final_test2_jsp.cpp(25,20): warning C4244: '=': 'double'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+D:\c_programming\기말고사\final_test2_jsp\final_test2_jsp\final_test2_jsp.cpp(26,39): warning C4244: '+=': 'double'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+D:\c_programming\기말고사\final_test2_jsp\final_test2_jsp\final_test2_jsp.cpp(27,15): warning C4244: '=': 'double'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  final_test2_jsp.vcxproj -> D:\c_programming\기말고사\final_test2_jsp\Debug\final_test2_jsp.exe
