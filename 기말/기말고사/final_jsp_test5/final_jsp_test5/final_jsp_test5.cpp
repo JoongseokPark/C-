@@ -18,8 +18,30 @@ int find_max(int a, int b, int c) {
     return max;
 }
 
+double find_max_double(double a, double b, double c) {
+    double max = 0;
+
+    max = a;
+    max = (max < a) ? a : max;
+    max = (max < b) ? b : max;
+    max = (max < c) ? c : max;
+
+    return max;
+}
+
 int find_min(int a, int b, int c) {
     int min = 0;
+
+    min = a;
+    min = (min > a) ? a : min;
+    min = (min > b) ? b : min;
+    min = (min > c) ? c : min;
+
+    return min;
+}
+
+double find_min_double(double a, double b, double c) {
+    double min = 0;
 
     min = a;
     min = (min > a) ? a : min;
@@ -58,7 +80,8 @@ int main()
 {
     srand(time(NULL));
     int a = 0, b = 0, c = 0;
-    int max = 0, min = 0, medi = 0, mean = 0;
+    int max = 0, min = 0, medi = 0;
+    double mean = 0;
     int random[10] = { 0 };
     int random2;
     int i = 0, j = 0, k = 0;
@@ -74,14 +97,15 @@ int main()
     scanf("%d %d %d", &a, &b, &c);
 
     max = find_max(a, b, c);
+    printf("%d\n", max);
     min = find_min(a, b, c);
+    printf("%d\n", min);
     medi = find_median(a, b, c);
 
     while (k < 10) {    //5.1번
-        random[k] = rand() % max;
-
-        if (random[k] >= min && random[k] <= max) k++;
-        else continue;
+        random[k] = rand() % max + min;
+        printf("%d\n", random[k]);
+        k++;
     };
 
     for (int i = 0; i < 10; i++) {
@@ -92,9 +116,11 @@ int main()
     // 5.2번
     printf("\n총합은 %d\n", total);
     
-    mean = total / 10;
-    printf("평균은 %d\n", mean);
+    mean = double(total) / 10;
+    printf("평균은 %lf\n", mean);
 
+
+    /*
     for (int i = 0; i < 10; i++) {  //5.3번
         if (mean - random[i] < 0) distance_tmp = random[i] - mean;
         else if (mean - random[i] > 0) distance_tmp = mean - random[i];
@@ -108,9 +134,24 @@ int main()
             farest = random[i];
         }
     }
+     printf("평균에서 가장 가까운 숫자 = %d\n평균에서 가장 먼 숫자 = %d\n", closest, farest);
+    */
+   
+    //5.3번
+    distance_tmp = find_max_double(fabs(mean - a), fabs(mean - b), fabs(mean - c));
+    printf("%lf\n", distance_tmp);
+    if (distance_tmp == fabs(mean - a)) farest = a;
+    if (distance_tmp == fabs(mean - b)) farest = b;
+    if (distance_tmp == fabs(mean - c)) farest = c;
+    distance_tmp = find_min_double(fabs(mean - a), fabs(mean - b), fabs(mean - c));
+    printf("%lf\n", distance_tmp);
+    if (distance_tmp == fabs(mean - a)) closest = a;
+    if (distance_tmp == fabs(mean - b)) closest = b;
+    if (distance_tmp == fabs(mean - c)) closest = c;
 
-    printf("평균에서 가장 가까운 숫자 = %d\n평균에서 가장 먼 숫자 = %d\n", closest, farest);
+    printf("입력받은 수 중\n평균에서 가장 가까운 숫자 = %d\n평균에서 가장 먼 숫자 = %d\n", closest, farest);
 
+    
     random2 = rand() % 10;
 
     //5.4번
@@ -123,7 +164,7 @@ int main()
         else if (answer > random[random2]) printf("좀 더 작은 숫자!\n");
 
         if (answer == random[random2]) {
-            printf("축하합니다 정답을 맞추셨습니다");
+            printf("축하합니다 정답을 맞추셨습니다\n");
             break;
         }
 
